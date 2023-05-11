@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Lora:wght@400;500;600&display=swap');
 
-:root[data-theme="light"] {
+:root{
     --primary: #74BDCB;
     --secondary: #FFA384;
     --light: #e7f4fb;

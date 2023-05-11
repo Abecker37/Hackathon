@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-size: var(--sizeText);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--clamp60);
+}
+
+.container > h1 {
+    font-family: var(--font-title);
+    font-size: var(--sizeTitle);
+}
+
+.container > h2{
+    font-size: var(--sizeTitle2);
+}
+

@@ -1,0 +1,14 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/assets/css/show.css">
+{% endblock %}
+
+{% block content %}
+	<main class="container">
+		<img src="/assets/images/{{ travel.image }}" alt="">
+		<h1>{{ travel.title }}</h1>
+		<h2>{{ travel.price }}</h2>
+		<p>{{ travel.description }}</p>
+	</main>
+{% endblock %}
