@@ -2,16 +2,24 @@
 
 {% block stylesheet %}
 	{{ parent() }}
-	<link rel="stylesheet" href="assets/style.css">
+	<link rel="stylesheet" href="assets/css/cards.css">
 {% endblock %}
 
 {% block content %}
-	{% for card in cards %}
-		<article>
-			<img src="assets/images/{{ card.image }}">
-			<h3>{{ card.title }}</h3>
-			<span>{{ card.price }}</span>
-			<p>{{ card.description }}</p>
-		</article>
-	{% endfor %}
+	<section class="container-fluid">
+		<div class="grid">
+			{% for card in cards %}
+				<article class="card">
+					<header>
+						<img src="assets/images/{{ card.image }}">
+					</header>
+					<h3>{{ card.title }}</h3>
+					<div class="label">
+						<h4>{{ card.price }}</h4>
+						<p class="text">{{ card.description }}</p>
+					</div>
+				</article>
+			{% endfor %}
+		</div>
+	</section>
 {% endblock %}

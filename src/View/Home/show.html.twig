@@ -1,0 +1,50 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+	<link rel="stylesheet" href="/assets/css/show.css">
+{% endblock %}
+
+{% block content %}
+	<div class="background">
+		<header class="headerTravel">
+			<h1>{{ travel.title }}</h1>
+			<p>{{ travel.description }}</p>
+			<div class="gridtravel">
+				<img src="/assets/images/{{ travel.image }}" alt="">
+				<div class="price">
+					<h2>
+						<span>à partir de :</span><br/><span>{{ travel.price }}</span><br/>par personne</h2>
+					<h3>Venez visiter ce magnifique pays qu'est le/la/l'
+						{{ travel.country }}</h3>
+				</div>
+			</div>
+		</header>
+		<main class="mainTravel">
+			<div class="textTravel">
+				<h4>Présentation</h4>
+				<p>Grâce à sa magnifique vue sur le Mont Teide et son atmosphère unique, l'hôtel Ôclub Experience Alua Parque San Antonio 4 est l'endroit parfait pour profiter pleinement de vos vacances. Entouré de superbes jardins tropicaux, le charme de l'hôtel opère dès votre arrivée. Il dispose de tout le confort nécessaire pour vivre des expériences uniques et pour bénéficier d'une escapade reposante.</p>
+			</div>
+			<div class="textTravel">
+				<h4>On testé et adoré</h4>
+				<ul>
+					<li>La vue magnifique sur le Mont Teide depuis l'hôtel</li>
+					<li>La proximité avec de nombreux points d'intérêt de l'île</li>
+					<li>La cadre luxuriant des jardins tropicaux entourant l'hôtel</li>
+				</ul>
+			</div>
+			<div class="textTravel">
+				<h4>Situation</h4>
+				<p>Votre hôtel Ôclub Experience Alua Parque San Antonio 4* se trouve sur les hauteurs de Puerto de la Cruz au nord de l'île de Tenerife. C'est le point de départ idéal pour partir à la découverte des nombreuses curiosités de l'île. À proximité : centre-ville de Puerto de la Cruz (env. 500 m), plage de sable noir de Castillo (env. 1,5 km), Loro Parque (2,5 km), La Orotava (6 km), Parc National du Mont Teide (30 km), San Cristóbal de La Laguna (30 km), Santa Cruz de Tenerife (38 km) Distance de l'aéroport : env. 27 km (Tenerife Nord) ou env. 84 km (Tenerife Sud)</p>
+			</div>
+			<div class="textTravel">
+				<h4>Votre hébergement</h4>
+				<p>Votre hôtel Ôclub Experience Alua Parque San Antonio 4* dispose de 250 chambres confortables, spacieuses et lumineuses réparties dans les différents batiments.Chambre Standard Superficie : 30 m² Capacité maximale : 3 adultes, adultes + 1 enfants  ou 2 adultes + 2 enfants Équipements : 2 lits individuels, salle de bains avec baignoire, sèche-cheveux et articles de toilette, minibar (en supplément et sur demande), wifi, télévision par satellite, téléphone, coffre-fort (en supplément), climatisation centralisée Certaines chambres sont adaptées pour les personnes à mobilité réduite (sur demande).
+				</p>
+			</div>
+			<div class="textTravel">
+				<h4>Restauration</h4>
+				<p>Tout au long de vos vacances, l'équipe d'animation de votre Ôclub Experience Parque San Antonio 4* vous propose de partager des moments de convivialité et de découverte à la carte. Entièrement francophone, elle répondra à toutes vos questions et saura vous faire vivre de vraies vacances canariennes, entre détente, fun et découverte de l'île : laissez-vous guider, on s'occupe de tout ! Les moments découverte : vivez l'expérience Immersion® Partez à la rencontre de la culture canarienne et des traditions locales à travers nos activités à la carte : excursion à Santa Cruz de Tenerife, découverte de la recette de la paella avec le chef de votre Ôclub, initiation à l'espagnol… Une palette colorée d'activités pour goûter à toute la richesse culturelle de votre région ! Les moments convivialité & partage Et si finalement, la plus belle surprise de vos vacances, c'était les rencontres humaines ?  Partagez un cocktail à l'apérÔclub, participez à nos événements sportifs et à nos balades juste pour le plaisir d'être ensemble… Autant de moments de convivialité que notre équipe Ôclub sera heureuse de partager avec vous. Les moments sports & tendance Actif même en vacances ? L'équipe Ôclub vous propose de vous initier à la danse latine, de partir à la découverte de l'île à travers ses sentiers de randonnée ou encore de vous dépenser en famille lors de nos sessions d'aquagym. Un vrai bain d'énergie pour être au tÔp tout au long de votre séjour ! Les moments bien-être Si la remise en forme et la relaxation font partie de vos envies, profitez de votre séjour pour vous mettre au yoga, dans un cadre de rêve avec vue sublime sur le Teide, au tai-chi ou encore au stretching. Pour vous sentir de mieux en mieux au fur et à mesure des jours qui passent… Programme d'activités susceptible de changer selon la saison, les conditions météo et l'affluence de l'hôtel. Disponible auprès des animateurs, dans nos Ôbox ou auprès de notre représentant sur place.</p>
+			</div>
+		</main>
+	</div>
+{% endblock %}
