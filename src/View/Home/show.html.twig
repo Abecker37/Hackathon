@@ -5,8 +5,13 @@
 {% endblock %}
 
 {% block content %}
+	<header>
+		<input type="search" class="search" id="search" name="search" placeholder="Faites le grand saut..."></input>
+</header>
+<main class="container">
 	<div class="background">
-		<header class="headerTravel">
+	<a href="/" role="button" class="return">Page d'accueil</a>
+		<div class="headerTravel">
 			<h1>{{ travel.title }}</h1>
 			<p>{{ travel.description }}</p>
 			<div class="gridtravel">
@@ -14,15 +19,14 @@
 				<div class="price">
 					<h2>
 						<span>à partir de :</span><br/><span>{{ travel.price }}</span><br/>par personne</h2>
-					<h3>Venez visiter ce magnifique pays qu'est le/la/l'
-						{{ travel.country }}</h3>
 				</div>
 			</div>
-		</header>
-		<main class="mainTravel">
+			<h3>Venez visiter ce magnifique pays qu'est le/la/l'{{ travel.country }}</h3>
+		</div>
+		<div class="mainTravel">
 			<div class="textTravel">
 				<h4>Présentation</h4>
-				<p>Grâce à sa magnifique vue sur le Mont Teide et son atmosphère unique, l'hôtel Ôclub Experience Alua Parque San Antonio 4 est l'endroit parfait pour profiter pleinement de vos vacances. Entouré de superbes jardins tropicaux, le charme de l'hôtel opère dès votre arrivée. Il dispose de tout le confort nécessaire pour vivre des expériences uniques et pour bénéficier d'une escapade reposante.</p>
+				<p>{{ travel.presentation }}</p>
 			</div>
 			<div class="textTravel">
 				<h4>On testé et adoré</h4>
@@ -34,17 +38,16 @@
 			</div>
 			<div class="textTravel">
 				<h4>Situation</h4>
-				<p>Votre hôtel Ôclub Experience Alua Parque San Antonio 4* se trouve sur les hauteurs de Puerto de la Cruz au nord de l'île de Tenerife. C'est le point de départ idéal pour partir à la découverte des nombreuses curiosités de l'île. À proximité : centre-ville de Puerto de la Cruz (env. 500 m), plage de sable noir de Castillo (env. 1,5 km), Loro Parque (2,5 km), La Orotava (6 km), Parc National du Mont Teide (30 km), San Cristóbal de La Laguna (30 km), Santa Cruz de Tenerife (38 km) Distance de l'aéroport : env. 27 km (Tenerife Nord) ou env. 84 km (Tenerife Sud)</p>
+				<p>{{ travel.situation }}</p>
 			</div>
 			<div class="textTravel">
 				<h4>Votre hébergement</h4>
-				<p>Votre hôtel Ôclub Experience Alua Parque San Antonio 4* dispose de 250 chambres confortables, spacieuses et lumineuses réparties dans les différents batiments.Chambre Standard Superficie : 30 m² Capacité maximale : 3 adultes, adultes + 1 enfants  ou 2 adultes + 2 enfants Équipements : 2 lits individuels, salle de bains avec baignoire, sèche-cheveux et articles de toilette, minibar (en supplément et sur demande), wifi, télévision par satellite, téléphone, coffre-fort (en supplément), climatisation centralisée Certaines chambres sont adaptées pour les personnes à mobilité réduite (sur demande).
-				</p>
+				<p>{{ travel.location }}</p>
 			</div>
 			<div class="textTravel">
 				<h4>Restauration</h4>
-				<p>Tout au long de vos vacances, l'équipe d'animation de votre Ôclub Experience Parque San Antonio 4* vous propose de partager des moments de convivialité et de découverte à la carte. Entièrement francophone, elle répondra à toutes vos questions et saura vous faire vivre de vraies vacances canariennes, entre détente, fun et découverte de l'île : laissez-vous guider, on s'occupe de tout ! Les moments découverte : vivez l'expérience Immersion® Partez à la rencontre de la culture canarienne et des traditions locales à travers nos activités à la carte : excursion à Santa Cruz de Tenerife, découverte de la recette de la paella avec le chef de votre Ôclub, initiation à l'espagnol… Une palette colorée d'activités pour goûter à toute la richesse culturelle de votre région ! Les moments convivialité & partage Et si finalement, la plus belle surprise de vos vacances, c'était les rencontres humaines ?  Partagez un cocktail à l'apérÔclub, participez à nos événements sportifs et à nos balades juste pour le plaisir d'être ensemble… Autant de moments de convivialité que notre équipe Ôclub sera heureuse de partager avec vous. Les moments sports & tendance Actif même en vacances ? L'équipe Ôclub vous propose de vous initier à la danse latine, de partir à la découverte de l'île à travers ses sentiers de randonnée ou encore de vous dépenser en famille lors de nos sessions d'aquagym. Un vrai bain d'énergie pour être au tÔp tout au long de votre séjour ! Les moments bien-être Si la remise en forme et la relaxation font partie de vos envies, profitez de votre séjour pour vous mettre au yoga, dans un cadre de rêve avec vue sublime sur le Teide, au tai-chi ou encore au stretching. Pour vous sentir de mieux en mieux au fur et à mesure des jours qui passent… Programme d'activités susceptible de changer selon la saison, les conditions météo et l'affluence de l'hôtel. Disponible auprès des animateurs, dans nos Ôbox ou auprès de notre représentant sur place.</p>
+				<p>Bienvenue dans l'univers savoureux de la gastronomie locale et de notre restaurant. Plongez dans une expérience culinaire inoubliable, où les saveurs s'entremêlent pour créer des délices pour les papilles. Notre restaurant est un véritable joyau pour les amateurs de gastronomie. Dès que vous franchissez la porte, vous êtes transporté dans un monde de sensations gustatives. L'atmosphère chaleureuse et accueillante vous met à l'aise, prêt à savourer chaque bouchée. Notre chef talentueux s'inspire des produits locaux et de saison pour créer des plats uniques qui capturent l'essence même de notre région. Chaque assiette est une œuvre d'art culinaire, harmonisant les textures, les couleurs et les saveurs pour émerveiller vos sens. De l'entrée au dessert, vous serez séduit par la diversité des plats. Imaginez déguster une salade fraîche garnie de légumes cultivés localement, accompagnée d'une vinaigrette maison qui sublime chaque ingrédient. Puis, laissez-vous tenter par un plat principal exquis, mettant en valeur des viandes tendres et juteuses, ou des fruits de mer délicats. Les accompagnements ne sont pas en reste. Des pommes de terre rôties, des légumes grillés ou des purées crémeuses viendront compléter votre plat principal avec une touche de perfection. Et n'oublions pas les délicieux desserts, des créations sucrées qui réjouiront votre palais, des pâtisseries légères aux douceurs chocolatées irrésistibles. Notre restaurant ne se contente pas de servir des plats exceptionnels, il offre également une expérience gastronomique complète. Le service attentif et amical de notre équipe rendra votre expérience encore plus agréable, vous guidant à travers le menu et vous proposant des accords mets-vins pour sublimer chaque plat. Que vous soyez un gastronome passionné ou un curieux à la recherche de nouvelles expériences culinaires, notre restaurant est l'endroit idéal pour satisfaire vos papilles et vous laisser des souvenirs gustatifs inoubliables. Découvrez la magie de notre cuisine locale et laissez-vous emporter par la symphonie des saveurs qui vous attendent.</p>
 			</div>
-		</main>
+		</div>
 	</div>
-{% endblock %}
+</main>{% endblock %}

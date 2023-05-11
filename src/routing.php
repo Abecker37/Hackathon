@@ -9,7 +9,17 @@ $routes = require_once __DIR__ . '/../src/routes.php';
 // If required route is not is $routes, return a 404 Page not found error
 if (!key_exists($route, $routes)) {
     header("HTTP/1.0 404 Not Found");
-    echo '404 - Page not found';
+    echo '<style> body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;}</style> <img src="/assets/images/avion_crash.gif" ></img>';
     exit();
 }
 
