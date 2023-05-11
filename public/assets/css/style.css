@@ -30,7 +30,7 @@
     --sizeTitle: 2rem;
     --sizeTitle2: 1rem;
     --sizeText: 0.87rem;
-    --sizeTitleLogo: 1.25rem;
+    --sizeText2: 1.25rem;
 
     --firstPlan: 10;
     --secondPlan: 5;
@@ -63,7 +63,7 @@ body>header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 100vh;
 }
 
@@ -116,6 +116,7 @@ textarea {
     text-align: center;
     box-sizing: border-box;
     gap: var(--spacing5);
+    background-color: var(--secondary);
 }
 
 h2 {
@@ -130,18 +131,32 @@ h2 {
     width: 20%;
 }
 
-.pop1>article,
-.pop2>article {
+.pop1>article {
     width: calc(var(--spacing5)*4);
-    height: calc(var(--spacing5)*4);
+    height: calc(var(--spacing5)*7);
     margin: auto;
     gap: var(--spacing1);
 }
 
-.populaire .pop1,
-.pop2 {
-    display: flex;
+.populaire .pop1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     margin: auto;
     margin: var(--spacing5);
     gap: var(--spacing3);
+}
+
+.pop1 img {
+    width: calc(var(--spacing5)*10);
+    height: calc(var(--spacing5)*2.5);
+}
+
+.pop1 h3 {
+    font-family: var(--sizeText);
+    font-size: var(--sizeText2);
+    margin-bottom: var(--spacing1);
+}
+
+.pop1 p {
+    margin-bottom: var(--spacing1);
 }
