@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Lora:wght@400;500;600&display=swap');
 
-
-[data-theme="light"],
-:root:not([data-theme="dark"]) {
-/*     --primary: var(--primary);
-    --secondary: var(--secondary);
-    --background-color: none; */
-}
-
 :root {
     --primary: #74BDCB;
     --secondary: #FFA384;
@@ -120,7 +112,6 @@ textarea {
     text-align: center;
     box-sizing: border-box;
     gap: var(--spacing5);
-    background-color: var(--secondary);
 }
 
 h2 {

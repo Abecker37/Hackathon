@@ -56,6 +56,7 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0;
+    --border-color: #FFA384;
 }
 
 [role=button]:is([aria-current], :hover, :active, :focus) {
