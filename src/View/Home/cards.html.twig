@@ -1,0 +1,17 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheet %}
+	{{ parent() }}
+	<link rel="stylesheet" href="assets/style.css">
+{% endblock %}
+
+{% block content %}
+	{% for card in cards %}
+		<article>
+			<img src="assets/images/{{ card.image }}">
+			<h3>{{ card.title }}</h3>
+			<span>{{ card.price }}</span>
+			<p>{{ card.description }}</p>
+		</article>
+	{% endfor %}
+{% endblock %}
