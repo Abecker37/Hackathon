@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Lora:wght@400;500;600&display=swap');
 
+
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
     --primary: var(--primary);
@@ -14,7 +15,7 @@
     --intermadiate: #EFE7BC;
     --dark: #021b1f;
 
-    --spacing: 0.5;
+    --spacing: 0.5rem;
     --spacing1: 1rem;
     --spacing2: 2rem;
     --spacing3: 3rem;
@@ -37,7 +38,9 @@
 
     --clamp60: clamp(650px, 60vw, 1200px);
     --clamp90: clamp(200px, 90vw, 690px);
-    --card-shadow: 2px 2px 7px 2px #FFA384, -3px 2px 7px 3px #EFE7BC, -3px -2px 7px 3px #e7f4fb, 6px -2px 7px 3px #74BDCB, 6px 5px 7px 3px #e7f4fb, -5px 5px 7px 3px #FFA384, -5px -3px 7px 1px #8E5CFF, 3px 2px 2px 2px rgba(0, 0, 0, 0);
+    --card-shadow: 2px 2px 7px 2px #FFA384, -3px 2px 7px 3px #EFE7BC,
+     -3px -2px 7px 3px #e7f4fb, 6px -2px 7px 3px #74BDCB, 6px 5px 7px 3px #e7f4fb,
+      -5px 5px 7px 3px #FFA384, -5px -3px 7px 1px #8E5CFF, 3px 2px 2px 2px rgba(0, 0, 0, 0);
 }
 
 * {
