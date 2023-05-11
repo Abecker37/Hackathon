@@ -13,6 +13,7 @@ if (!key_exists($route, $routes)) {
         margin: 0;
         padding: 0;
         overflow: hidden;
+    }
     img {
         position: absolute;
         top: 0;
