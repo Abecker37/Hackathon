@@ -65,8 +65,8 @@ ALTER TABLE `item`
 CREATE TABLE `card` (
   `id` INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
   `title` VARCHAR(150) NOT NULL,
-  `description` VARCHAR(255) NOT NULL,
-  `price` VARCHAR(15),
+  `description` VARCHAR(285) NOT NULL,
+  `price` VARCHAR(30),
   `image` VARCHAR(255),
   `country` VARCHAR(50)
 );
@@ -110,10 +110,25 @@ INSERT INTO `card` (`title`, `description`, `price`, `image`, `country`) VALUES
 ("Safari en Tesla",
 "Laissez la faune des brousses vous tenir compagnie après 400km de paysages époustouflants en pleine nature et savourez votre fin avec la classe d'un self-made man écoresponsable.",
 "43 200,00€",
-"Tesla-desert-Dubai-e1662040751781.jpg",
+"Tesla-desert-Dubai-1.webp",
 "Niger"),
 ("Saut en parachute avec serviette",
 "Votre rêve à vous, c'est de jouer les Inspecteurs Gadget devant tout le monde pour amuser la galerie. Ce rêve devient réalité en vous laissant l'opportunité de ne faire qu'un avec la terre après un vol riche en fous rires. Petit farceur va!",
 "250,00",
 "serviette.webp",
-"Allemagne");
+"Allemagne"),
+("Excursion à la Castellane dans un bus du PSG",
+"Votre amour pour le sport vous aura décidément suivi tout au long de votre vie et c'est sous le soleil radieux de la cité Phocéenne qu'elle se terminera en beauté, sous une pluie d'équipements électroménagers divers et d'ogives de 7.62x39.",
+"100,00€",
+"1200x680_maxstockworld403520.webp",
+"France"),
+("Crémation par réacteur au prochain décollage de Space-X",
+"Vous êtes un grand fan d'astronomie, de conquête spatiale, d'Elon Musk et ça vous va bien ! Vous êtes néanmoins quelqu'un de pressé et c'est pourquoi cette formule saura vous combler plus que n'importe qui d'autre en vous laissant partir en fumée tel David Copperfield.",
+"30 000,00€",
+"heavy.webp",
+"USA"),
+("Descente en tyrolienne sur une ligne à haute tension.",
+"Vous êtes un peu un mélange de Johnny Halliday et Claude François, le théatral, ça vous parle et vous avez le goût du risque. Alors n'attendez plus pour venir profiter de notre accrobranche sur mesure pour ceux qui, comme vous, préfèrent une éternité sous les ifs à un lundi au soleil.",
+"700€ (frais d'EDF compris)",
+"cover-r4x3w1000.jpg",
+"France");
