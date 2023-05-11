@@ -9,6 +9,14 @@
     gap: 2rem;
 }
 
+.card h3 {
+    height: 6rem;
+}
+
+span {
+    margin-block-start: 3rem;
+}
+
 .card header {
     border-radius: 10px;
     height: 400px;
