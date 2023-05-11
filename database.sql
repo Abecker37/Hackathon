@@ -114,7 +114,7 @@ INSERT INTO `card` (`title`, `description`, `price`, `image`, `country`) VALUES
 "Niger"),
 ("Saut en parachute avec serviette",
 "Votre rêve à vous, c'est de jouer les Inspecteurs Gadget devant tout le monde pour amuser la galerie. Ce rêve devient réalité en vous laissant l'opportunité de ne faire qu'un avec la terre après un vol riche en fous rires. Petit farceur va!",
-"250,00",
+"250,00€",
 "serviette.webp",
 "Allemagne"),
 ("Excursion à la Castellane dans un bus du PSG",
