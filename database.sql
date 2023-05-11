@@ -103,7 +103,7 @@ INSERT INTO `card` (`title`, `description`, `price`, `image`, `country`) VALUES
 "68.jpg",
 "Canada"),
 ("Altercation verbale avec Kim Jong-Un",
-"Vous détestez l'autorité ? Sautez sur l'occasion grâce à cette offre inédite et allez vomir votre aigreur sur l'un des hommes d'état les plus respectés au monde pour finir torturé, émasculé, écartelé, vous et votre arrogance.",
+"Vous détestez l'autorité ? Sautez sur l'occasion grâce à cette offre inédite et allez vomir votre aigreur sur l'un des hommes d'état les plus respectés au monde pour finir torturé, émasculé, écartelé, vous et votre arrogance occidentale.",
 "5 000 000 KPW",
 "coree-nord_1149433_1250x625.jpeg",
 "Corée du Nord"),
