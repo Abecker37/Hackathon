@@ -11,36 +11,35 @@
 	<div class="presentation">
 		<p>Bienvenue chez "Destination Finale", l'entreprise qui redéfinit l'aventure jusqu'au dernier instant ! Nos voyages sur mesure vous transportent vers des destinations captivantes, avec une touche de légèreté face à l'absurdité de la vie. Préparez-vous à explorer des lieux uniques, en faisant face à l'inévitable avec un sourire complice. Rejoignez-nous pour une expérience de voyage inoubliable et laissez-vous emporter par l'excitation de chaque instant. Destination Finale, faites le grand saut vers l'inconnu !</p>
 	</p>
-	<div class="forfait">
-		<article>1</article>
-		<article>2</article>
-		<article>3</article>
-		<article>4</article>
+</div>
+<div class="forfait">
+	<article>1</article>
+	<article>2</article>
+	<article>3</article>
+	<article>4</article>
+</div>
+<div>
+	<div class="pop-up-content">
+		<article class="pop-up">
+			<img src="/assets/images/mamie1.png" class="mamie">
+			<h2>Offrez une belle fin à vos proches!</h2>
+		</article>
 	</div>
-	<div>
-		<div class="pop-up-content">
-			<article class="pop-up">
-				<img src="/assets/images/mamie1.png" class="mamie">
-				<h2>Offrez une belle fin à vos proche!</h2>
+</div>
+
+<section class="container-fluid">
+	<div class="grid">
+		{% for card in cards %}
+			<article class="card">
+				<header>
+					<img src="assets/images/{{ card.image }}">
+				</header>
+				<h3>{{ card.title }}</h3>
+				<div class="label">
+					<h4>{{ card.price }}</h4>
+					<p class="text">{{ card.description }}</p>
+				</div>
 			</article>
-		</div>
+		{% endfor %}
 	</div>
-
-	<section class="container-fluid">
-		<div class="grid">
-			{% for card in cards %}
-				<article class="card">
-					<header>
-						<img src="assets/images/{{ card.image }}">
-					</header>
-					<h3>{{ card.title }}</h3>
-					<div class="label">
-						<h4>{{ card.price }}</h4>
-						<p class="text">{{ card.description }}</p>
-					</div>
-				</article>
-			{% endfor %}
-		</div>
-	</section>
-
-</main>{% endblock %}
+</section></main>{% endblock %}

@@ -22,5 +22,5 @@ class SearchManager extends AbstractManager
 
         $statement->execute();
         return $statement->fetchAll();
-    } 
+    }
 }

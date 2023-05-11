@@ -21,8 +21,8 @@ class HomeController extends AbstractController
         $search = $searchManager->findCard($search);
 
         return $this->twig->render('Home/index.html.twig', [
-            'cards' => $cards, 
-            'search' => $search
+            'cards' => $cards,
+            'search' => $search,
         ]);
     }
 }
