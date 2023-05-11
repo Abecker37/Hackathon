@@ -2,8 +2,10 @@
 
 {% block content %}
 	<header>
-
-		<input type="search" class="search" id="search" name="search" placeholder="Faites le grand saut..."></input>
+		<form action="" method="GET">
+			<label for="search_card"></label>
+			<input type="search" class="search" id="search_card" name="title" value="{{ search.title }}" placeholder="Faites le grand saut..."></input>
+	</form>
 </header>
 <main>
 	<div class="presentation">
@@ -22,20 +24,23 @@
 				<h2>Offrez une belle fin à vos proche!</h2>
 			</article>
 		</div>
-		<div class="populaire">
-			<div class="pop1">
-				<article>1</article>
-				<article>2</article>
-				<article>3</article>
-			</div>
-			<div class="pop2">
-				<article>4</article>
-				<article>5</article>
-				<article>6</article>
-			</div>
-		</div>
 	</div>
-  
-  {% include 'Home/cards.html.twig' %}
-  
+
+	<section class="container-fluid">
+		<div class="grid">
+			{% for card in cards %}
+				<article class="card">
+					<header>
+						<img src="assets/images/{{ card.image }}">
+					</header>
+					<h3>{{ card.title }}</h3>
+					<div class="label">
+						<h4>{{ card.price }}</h4>
+						<p class="text">{{ card.description }}</p>
+					</div>
+				</article>
+			{% endfor %}
+		</div>
+	</section>
+
 </main>{% endblock %}

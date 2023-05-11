@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Model\CardManager;
+use App\Model\SearchManager;
 
 class HomeController extends AbstractController
 {
@@ -11,8 +12,17 @@ class HomeController extends AbstractController
      */
     public function index(): string
     {
+        $search = array_map('trim', $_GET);
+
         $cardManager = new CardManager();
         $cards = $cardManager->selectAll();
-        return $this->twig->render('Home/index.html.twig', ['cards' => $cards]);
+
+        $searchManager = new SearchManager();
+        $search = $searchManager->findCard($search);
+
+        return $this->twig->render('Home/index.html.twig', [
+            'cards' => $cards, 
+            'search' => $search
+        ]);
     }
 }

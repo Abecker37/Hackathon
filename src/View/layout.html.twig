@@ -5,16 +5,26 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/assets/images/favicon.png">
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+    ScrollReveal({ duration: 2000 })
+    ScrollReveal({ reset: true })
+    </script>
 
     <title>{% block title %}{% endblock %}</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
     {% block stylesheet %}{% endblock %}
 </head>
 
 <body>
     {% block content %}{% endblock %}
-    {% block javascript %}{% endblock %}
+    {% block javascript %}
+    <script>
+    ScrollReveal().reveal('.card', { delay: 250 })
+    </script>
+    {% endblock %}
 </body>
 </html>
