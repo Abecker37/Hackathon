@@ -1,0 +1,20 @@
+body {
+    background-image: url("../images/cloud.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--spacing1)*37.5);
+    padding: calc(var(--spacing1)*1.2);
+    border-radius: var(--spacing2);
+}

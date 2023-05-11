@@ -1,3 +1,46 @@
-body {
-    color: #f76c6c;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Lora:wght@400;500;600&display=swap');
+
+:root[data-theme="light"] {
+    --primary: #74BDCB;
+    --secondary: #FFA384;
+    --light: #e7f4fb;
+    --intermadiate: #EFE7BC;
+    --dark: #021b1f;
+
+    --spacing: 0.5;
+    --spacing1: 1rem;
+    --spacing2: 2rem;
+    --spacing3: 3rem;
+    --spacing4: 4rem;
+    --spacing5: 5rem;
+
+    --box-shadow: -18px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+    --font-title: 'Cormorant', serif;
+    --font-text: 'Lora', serif;
+
+    --sizeTitle: 2rem;
+    --sizeTitle2: 1rem;
+    --sizeText: 0.87rem;
+    --sizeTitleLogo: 1.25rem;
+
+    --firstPlan: 10;
+    --secondPlan: 5;
+    --thirdPlan: 2;
+
+    --clamp60: clamp(650px, 60vw, 1200px);
+    --clamp90: clamp(200px, 90vw, 690px);
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-text);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
 }
