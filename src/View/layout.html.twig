@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,14 +9,13 @@
 		<title>
 			{% block title %}{% endblock %}
 		</title>
-		{% block stylesheet %}<link rel="stylesheet" href="css/pico.min.css">
-			<link rel="stylesheet" href="/assets/css/style.css">
-			<link rel="stylesheet" href="/assets/css/search.css">
-		{% endblock %}
-	</head>
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+		<link rel="stylesheet" href="/assets/css/style.css"> {% block stylesheet %}{% endblock %}
 
-	<body>
-		{% block content %}{% endblock %}
-		{% block javascript %}{% endblock %}
-	</body>
-</html>
+		</head>
+
+		<body>
+			{% block content %}{% endblock %}
+			{% block javascript %}{% endblock %}
+		</body>
+	</html>
