@@ -4,13 +4,15 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    margin: auto;
+    gap: var(--spacing3);
 }
 
 .card h3 {
-    height: 6rem;
+    font-family: var(--sizeText);
+    font-size: var(--sizeText2);
+    margin-bottom: var(--spacing1);
 }
 
 span {
@@ -18,7 +20,6 @@ span {
 }
 
 .card header {
-    border-radius: 10px;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -28,12 +29,14 @@ img {
     display: flex;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 5px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    box-shadow: var(--card-shadow);
+    justify-content: space-around;
 }
 
 .label {
@@ -42,4 +45,27 @@ img {
 
 .text {
     margin-block-end: 0%;
+    margin-bottom: var(--spacing1);
+}
+
+[role=button] {
+    display: flex;
+    --background-color: #FFA384;
+    margin-block-start: auto;
+    height: var(--spacing2);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+[role=button]:is([aria-current], :hover, :active, :focus) {
+    --background-color: #FFA384;
+    --border-color: #FFA384;
+    --color: #EFE7BC;
+}
+
+[role=button]:is([aria-current], :hover) {
+    --background-color: #EFE7BC;
+    --color: var(--light);
+    --border-color: #EFE7BC;
 }
