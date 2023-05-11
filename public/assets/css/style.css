@@ -3,9 +3,9 @@
 
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
-    --primary: var(--primary);
+/*     --primary: var(--primary);
     --secondary: var(--secondary);
-    --background-color: none;
+    --background-color: none; */
 }
 
 :root {
