@@ -110,7 +110,7 @@ INSERT INTO `card` (`title`, `description`, `price`, `image`, `country`) VALUES
 ("Safari en Tesla",
 "Laissez la faune des brousses vous tenir compagnie après 400km de paysages époustouflants en pleine nature et savourez votre fin avec la classe d'un self-made man écoresponsable.",
 "43 200,00€",
-"Tesla-desert-Dubai-e1662040751781.jpg",
+"Tesla-desert-Dubai-1.webp",
 "Niger"),
 ("Saut en parachute avec serviette",
 "Votre rêve à vous, c'est de jouer les Inspecteurs Gadget devant tout le monde pour amuser la galerie. Ce rêve devient réalité en vous laissant l'opportunité de ne faire qu'un avec la terre après un vol riche en fous rires. Petit farceur va!",
