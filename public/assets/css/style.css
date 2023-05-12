@@ -231,16 +231,14 @@ h2 {
         width: var(--clamp90);
     }
 
-<<<<<<< HEAD
     .pop-up h2 {
         font-size: calc(var(--sizeText) * 1.2);
-=======
+    }
     .pop-up>img {
         width: 200px;
     }
 
     .pop-up {
         height: calc(var(--spacing4)*2);
->>>>>>> 6df76763ba5f583e29e9ebd19163e68e492f5a8e
     }
 }
