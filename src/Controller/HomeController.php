@@ -11,8 +11,13 @@ class HomeController extends AbstractController
      */
     public function index(): string
     {
+        $search = array_map('trim', $_GET);
+
         $cardManager = new CardManager();
-        $cards = $cardManager->selectAll();
-        return $this->twig->render('Home/index.html.twig', ['cards' => $cards]);
+        $cards = $cardManager->findCard($search);
+        return $this->twig->render('Home/index.html.twig', [
+            'cards' => $cards,
+            'search' => $search
+        ]);
     }
 }
