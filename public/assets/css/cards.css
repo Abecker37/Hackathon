@@ -47,7 +47,6 @@ img {
     width: 100%;
     box-shadow: var(--card-shadow);
     justify-content: space-around;
-    align-items: center;
 }
 
 .label {
