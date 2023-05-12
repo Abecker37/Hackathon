@@ -2,7 +2,9 @@
 
 {% block content %}
 	<header>
-		<input type="search" class="search" id="search" name="search" placeholder="Faites le grand saut..."></input>
+		<form action="" method="GET">
+			<input type="search" class="search" id="search" name="title" value="{{ search.title }}" placeholder="Faites le grand saut..."></input>
+	</form>
 </header>
 <main class="container">
 	<div class="presentation">
