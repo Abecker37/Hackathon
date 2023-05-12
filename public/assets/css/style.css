@@ -135,6 +135,14 @@ h2 {
     font-family: var(--font-title);
     margin: 0;
 }
+a {
+    cursor: pointer;
+}
+
+#next_button {
+    margin-top: 5px;
+    visibility: hidden;
+}
 
 @media screen and (max-width: 767px) {
     body>.container{
