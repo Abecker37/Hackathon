@@ -169,13 +169,28 @@ a {
     margin-bottom: var(--spacing3);
 }
 
+.alert>img {
+    margin-bottom: var(--spacing3);
+}
+
 input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search] {
     border-color: var(--dark);
+    width: 60%;
+    text-align: center;
 }
 
 [role=link],
 a {
     color: #FFA384;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--sizeText2);
+    margin: 0;
+    color: var(--dark);
+    text-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing3);
 }
 
 
