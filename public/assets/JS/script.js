@@ -56,7 +56,7 @@ function firstLoad() {
         offset = 0;
         document.getElementById(
             "info"
-        ).innerHTML += `<p>${count} objects with description in a 1km radius</p>`;
+        ).innerHTML += `<p>${count} 2 résultats avec description dans un rayon d'un kilomètre</p>`;
         loadList();
     });
 }
