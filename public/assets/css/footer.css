@@ -70,8 +70,11 @@ pre,
 table,
 ul {
     margin-bottom: 0;
-    color: var(--light);
     font-size: var(--sizeText);
+}
+
+footer > ul, footer p{
+    color: var(--light);
 }
 
 .media-list li {
