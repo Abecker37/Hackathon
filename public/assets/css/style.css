@@ -95,15 +95,16 @@ textarea {
 .forfait {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: var(--spacing2);
+    row-gap: var(--spacing3);
+    margin-bottom: var(--spacing3);
 }
 
 .forfait>article {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(var(--spacing5)*3);
-    height: calc(var(--spacing5)*2.5);
+    width: calc(var(--spacing4)*3);
+    height: calc(var(--spacing4)*2.5);
     box-shadow: var(--card-shadow);
     margin: auto;
     gap: var(--spacing1);
@@ -121,6 +122,7 @@ textarea {
     align-items: center;
     text-align: center;
     padding: 0;
+    margin-bottom: var(--spacing3);
     background-image: url("/assets/images/pink.jpg");
 }
 
@@ -148,6 +150,7 @@ textarea {
     font-family: var(--font-title);
     margin: 0;
 }
+
 a {
     cursor: pointer;
 }
