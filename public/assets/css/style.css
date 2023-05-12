@@ -99,7 +99,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: calc(var(--spacing5)*3);
     height: calc(var(--spacing5)*2.5);
     box-shadow: var(--card-shadow);
@@ -108,19 +107,26 @@ textarea {
     background-image: url("/assets/images/stars.gif");
 }
 
+.forfait>article a {
+    text-decoration: none;
+}
+
 .pop-up {
     height: calc(var(--spacing5)*2);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: var(--spacing5);
+    padding: 0;
+    background-image: url("/assets/images/pink.jpg");
 }
 
-h2 {
+.pop-up h2 {
     text-align: center;
-    font-family: var(--font-title);
+    font-family: var(--sizeText2);
     margin: 0;
+    color: var(--intermadiate);
+    text-shadow: var(--box-shadow);
 }
 
 .gift>h1 {
@@ -131,13 +137,17 @@ h2 {
     text-align: center;
 }
 
+.pop-up>img {
+    width: 400px;
+}
+
 .forfait h3 {
     font-family: var(--font-title);
     margin: 0;
 }
 
 @media screen and (max-width: 767px) {
-    body>.container{
+    body>.container {
         width: var(--clamp90);
     }
 }
