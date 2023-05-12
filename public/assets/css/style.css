@@ -84,6 +84,11 @@ textarea {
     width: 60%;
 }
 
+.logo {
+    width: 50%;
+    margin-block-end: 13rem;
+}
+
 .presentation>p {
     margin: var(--spacing4);
     font-family: var(--font-title);
@@ -159,5 +164,9 @@ a {
 @media screen and (max-width: 767px) {
     body>.container {
         width: var(--clamp90);
+    }
+
+    .pop-up h2 {
+        font-size: calc(var(--sizeText) * 1.2);
     }
 }
