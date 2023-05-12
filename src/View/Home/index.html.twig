@@ -7,39 +7,34 @@
 			<input type="search" class="search" id="search_card" name="title" value="{{ search.title }}" placeholder="Faites le grand saut..."></input>
 	</form>
 </header>
-<main>
+<main class="container">
 	<div class="presentation">
 		<p>Bienvenue chez "Destination Finale", l'entreprise qui redéfinit l'aventure jusqu'au dernier instant ! Nos voyages sur mesure vous transportent vers des destinations captivantes, avec une touche de légèreté face à l'absurdité de la vie. Préparez-vous à explorer des lieux uniques, en faisant face à l'inévitable avec un sourire complice. Rejoignez-nous pour une expérience de voyage inoubliable et laissez-vous emporter par l'excitation de chaque instant. Destination Finale, faites le grand saut vers l'inconnu !</p>
 	</p>
-</div>
-<div class="forfait">
-	<article>1</article>
-	<article>2</article>
-	<article>3</article>
-	<article>4</article>
-</div>
-<div>
-	<div class="pop-up-content">
-		<article class="pop-up">
-			<img src="/assets/images/mamie1.png" class="mamie">
-			<h2>Offrez une belle fin à vos proches!</h2>
-		</article>
-	</div>
-</div>
-
-<section class="container-fluid">
-	<div class="grid">
-		{% for card in cards %}
-			<article class="card">
-				<header>
-					<img src="assets/images/{{ card.image }}">
-				</header>
-				<h3>{{ card.title }}</h3>
-				<div class="label">
-					<h4>{{ card.price }}</h4>
-					<p class="text">{{ card.description }}</p>
-				</div>
+	<div class="gift">
+		<h1>Nos cartes cadeaux</h1>
+		<div class="forfait">
+			<article>
+				<h3>Formule Solo</h3>
 			</article>
-		{% endfor %}
+			<article>
+				<h3>Formule Duo</h3>
+			</article>
+			<article>
+				<h3>Formule Troisiéme Âge</h3>
+			</article>
+			<article>
+				<h3>Formule Prenium</h3>
+			</article>
+		</div>
 	</div>
-</section></main>{% endblock %}
+	<div>
+		<div class="pop-up-content">
+			<article class="pop-up">
+				<img src="/assets/images/mamie1.png" class="mamie">
+				<h2>⭐️ Offrez une belle fin à vos proche!!! ⭐️</h2>
+			</article>
+		</div>
+	</div>
+	{% include 'Home/cards.html.twig' %}
+</main>{% endblock %}
