@@ -2,6 +2,7 @@
 
 {% block content %}
 	<header>
+	<img class ="logo" src="assets/images/final_destination_1_logo2.png">
 		<form action="" method="GET">
 			<input type="search" class="search" id="search" name="title" value="{{ search.title }}" placeholder="Faites le grand saut..."></input>
 	</form>
@@ -12,22 +13,22 @@
 		<div class="gift">
 			<h1>Nos cartes cadeaux</h1>
 			<div class="forfait">
-				<article>
+				<article class="formula">
 					<a href="/travel/show?id=2">
 						<h3>Formule Solo</h3>
 					</a>
 				</article>
-				<article>
+				<article class="formula">
 					<a href="/travel/show?id=6">
 						<h3>Formule Duo</h3>
 					</a>
 				</article>
-				<article>
+				<article class="formula">
 					<a href="/travel/show?id=11">
 						<h3>Formule Troisième Âge</h3>
 					</a>
 				</article>
-				<article>
+				<article class="formula">
 					<a href="/travel/show?id=8">
 						<h3>Formule Premium</h3>
 					</a>
@@ -49,7 +50,7 @@
 		<div class="pop-up-content">
 			<article class="pop-up">
 				<img src="/assets/images/mamie1.png" class="mamie">
-				<h2>⭐️ Offrez une belle fin à vos proche! ⭐️</h2>
+				<h2>⭐️ Offrez une belle fin à vos proches ! ⭐️</h2>
 			</article>
 		</div>
 	</div>
@@ -60,17 +61,28 @@
 			<input id="textbox" type="search" placeholder="Faites le grand saut..." aria-describedby="button-search" class="form-control "/>
 		</form>
 
-		<div id="info" class="alert alert-primary"></div>
-		<div class="row">
-			<div id="list" class="list-group"></div>
-			<nav class="text-center">
-				<button id="next_button" type="button" class="btn">
-					Next
-				</button>
-			</nav>
-		</div>
-		<div id="poi" class="alert"></div>
-	</div>
+    <div class="container">
+        <form id="search_form" class="input-group">
+            <input
+            id="textbox"
+            type="search"
+            placeholder="Chercher l'endroit ou vous voullez vous suicider en rentrant la ville de votre choix"
+            aria-describedby="button-search"
+            class="form-control "
+            />
+        </form>
+    
+        <div id="info" class="alert alert-primary"></div>
+        <div class="row">
+                <div id="list" class="list-group"></div>
+                <nav class="text-center">
+                    <button id="next_button" type="button" class="btn">
+                        Next
+                    </button>
+                </nav>
+            </div>
+                <div id="poi" class="alert"></div>
+    </div>
 </main>
 {% include 'Components/_footer.html.twig' %}{% endblock %}{% block javascript %}
 <script src="/assets/JS/script.js"></script>{% endblock %}
