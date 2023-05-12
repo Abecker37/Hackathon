@@ -1,6 +1,12 @@
 .container-fluid {
+    display:flex;
     width: 95%;
+    margin-inline-start: 0%;
 }
+
+/*html.sr .card {
+    visibility: hidden;
+}*/
 
 .grid {
     display: grid;
@@ -41,6 +47,7 @@ img {
     width: 100%;
     box-shadow: var(--card-shadow);
     justify-content: space-around;
+    align-items: center;
 }
 
 .label {

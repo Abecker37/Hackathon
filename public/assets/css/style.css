@@ -85,6 +85,11 @@ textarea {
     width: 60%;
 }
 
+.logo {
+    width: 50%;
+    margin-block-end: 13rem;
+}
+
 .presentation>p {
     margin: var(--spacing4);
     font-family: var(--font-title);
@@ -215,6 +220,10 @@ h2 {
     background-color: #FFA384;
     border-color: #FFA384;
     margin-bottom: var(--spacing3);
+}
+
+.pop-up h2 {
+    font-size: calc(var(--sizeText) * 1.2);
 }
 
 @media screen and (max-width: 767px) {

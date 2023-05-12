@@ -5,6 +5,7 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" href="/assets/images/favicon.png">
+        <script src="https://unpkg.com/scrollreveal"></script>
 
 		<title>
 			{% block title %}Destination Finale
@@ -17,6 +18,16 @@
 
 		<body>
 			{% block content %}{% endblock %}
-			{% block javascript %}{% endblock %}
+			{% block javascript %}
+            <script>
+            ScrollReveal().reveal('.logo', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.search', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.card', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.pop-up', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.presentation', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.gift', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.formula', {duration: 2000, interval: 200})
+            ScrollReveal().reveal('.form-control', {duration: 2000, interval: 200})
+            </script>{% endblock %}
 		</body>
 	</html>
