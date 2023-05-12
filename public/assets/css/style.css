@@ -95,16 +95,15 @@ textarea {
 .forfait {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    row-gap: var(--spacing3);
-    margin-bottom: var(--spacing3);
+    gap: var(--spacing2);
 }
 
 .forfait>article {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(var(--spacing4)*3);
-    height: calc(var(--spacing4)*2.5);
+    width: calc(var(--spacing5)*3);
+    height: calc(var(--spacing5)*2.5);
     box-shadow: var(--card-shadow);
     margin: auto;
     gap: var(--spacing1);
@@ -120,18 +119,19 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 0;
-    margin-bottom: var(--spacing3);
     background-image: url("/assets/images/pink.jpg");
+    margin-top: var(--spacing5);
+    margin-bottom: var(--spacing5);
 }
 
 .pop-up h2 {
     text-align: center;
     font-family: var(--sizeText2);
-    margin: 0;
+    font-size: clamp(1rem, 5%, 2.5rem);
     color: var(--intermadiate);
     text-shadow: var(--box-shadow);
+    margin-bottom: 0px;
 }
 
 .gift>h1 {
@@ -195,34 +195,20 @@ h2 {
 
 
 #next_button {
-    margin-top: var(--spacing5);
+    margin-top: 5px;
     visibility: hidden;
-    display: flex;
-    --background-color: #FFA384;
-    margin-block-start: auto;
-    height: calc(var(--spacing2)*1.5);
-    margin: 0;
-    --border-color: #FFA384;
-    width: 40%;
-    margin-bottom: var(--spacing3);
-}
-
-.list-group-item p {
-    color: var(--dark);
-}
-
-.text-center {
-    display: flex;
-    justify-content: center;
-}
-
-h5 {
-    font-family: var(--font-title);
-    font-family: var(--sizeText2);
 }
 
 @media screen and (max-width: 767px) {
     body>.container {
         width: var(--clamp90);
+    }
+
+    .pop-up>img {
+        width: 200px;
+    }
+
+    .pop-up {
+        height: calc(var(--spacing4)*2);
     }
 }
