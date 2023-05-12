@@ -1,23 +1,23 @@
 const apiKey = "5ae2e3f221c38a28845f05b60ef90071a390a70ea0c5ceb70dd38c42";
 
 function apiGet(method, query) {
-    return new Promise(function(resolve, reject) {
-      var otmAPI =
-        "https://api.opentripmap.com/0.1/en/places/" +
-        method +
-        "?apikey=" +
-        apiKey;
-      if (query !== undefined) {
-        otmAPI += "&" + query;
-      }
-      fetch(otmAPI)
-        .then(response => response.json())
-        .then(data => resolve(data))
-        .catch(function(err) {
-          console.log("Fetch Error :-S", err);
-        });
+    return new Promise(function (resolve, reject) {
+        var otmAPI =
+            "https://api.opentripmap.com/0.1/en/places/" +
+            method +
+            "?apikey=" +
+            apiKey;
+        if (query !== undefined) {
+            otmAPI += "&" + query;
+        }
+        fetch(otmAPI)
+            .then(response => response.json())
+            .then(data => resolve(data))
+            .catch(function (err) {
+                console.log("Fetch Error :-S", err);
+            });
     });
-  }
+}
 
 const pageLength = 5; // number of objects per page
 
@@ -90,8 +90,7 @@ function createListItem(item) {
     let a = document.createElement("a");
     a.className = "list-group-item list-group-item-action";
     a.setAttribute("data-id", item.xid);
-    a.innerHTML = `<h5 class="list-group-item-heading">${item.name}</h5>
-            <p class="list-group-item-text">${item.kinds}</p>`;
+    a.innerHTML = `<h5 class="list-group-item-heading">${item.name}</h5>`;
 
     a.addEventListener("click", function () {
         document.querySelectorAll("#list a").forEach(function (item) {
@@ -118,16 +117,23 @@ function onShowPOI(data) {
         : data.info
             ? data.info.descr
             : "No description";
-
-    poi.innerHTML += `<p><a target="_blank" href="${data.otm}">Show more at OpenTripMap</a></p>`;
 }
 
-
-
+document.getElementById("textbox").addEventListener("input", function () {
+    if (this.value === "") {
+        clearResults();
+    }
+});
 
 document.getElementById("next_button").addEventListener("click", function () {
     offset += pageLength;
     loadList();
 });
 
-
+function clearResults() {
+    document.getElementById("list").innerHTML = "";
+    document.getElementById("poi").innerHTML = "";
+    document.getElementById("info").innerHTML = "";
+    offset = 0;
+    document.getElementById("next_button").style.visibility = "hidden";
+}
