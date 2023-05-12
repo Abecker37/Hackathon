@@ -226,6 +226,10 @@ h2 {
     font-size: calc(var(--sizeText) * 1.2);
 }
 
+.pop-up h2 {
+    font-size: calc(var(--sizeText) * 1.2);
+}
+
 @media screen and (max-width: 767px) {
     body>.container {
         width: var(--clamp90);
