@@ -1,6 +1,11 @@
-.container{
+body>.container {
+    width: 100%;
+}
+
+.container {
     width: var(--clamp60);
 }
+
 .background {
     display: flex;
     flex-direction: column;
@@ -11,7 +16,7 @@
     margin-top: var(--spacing1);
 }
 
-.return{
+.return {
     align-self: flex-start;
 
 }
@@ -65,15 +70,21 @@
 }
 
 @media screen and (max-width: 767px) {
-    .container{
+    .container {
         width: var(--clamp90);
     }
+
     .gridtravel {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .textTravel{
-        margin:0px;
+
+    .textTravel {
+        margin: 0px;
         margin-top: var(--spacing2);
+    }
+
+    body>.container {
+        width: 100%;
     }
 }
