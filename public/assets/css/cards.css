@@ -18,7 +18,7 @@ span {
 }
 
 .card header {
-    border-radius: 10px;
+    border-radius: calc(var(--borderRadius) * 2);
     height: 400px;
     display: flex;
     justify-content: center;
@@ -28,12 +28,13 @@ img {
     display: flex;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 5px;
+    border-radius: var(--borderRadius);
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    box-shadow: var(--card-shadow);
 }
 
 .label {
