@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Lora:wght@400;500;600&display=swap');
+@import url('footer.css');
 
 :root {
     --primary: #74BDCB;
@@ -123,17 +124,19 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 0;
     background-image: url("/assets/images/pink.jpg");
+    margin-top: var(--spacing5);
+    margin-bottom: var(--spacing5);
 }
 
 .pop-up h2 {
     text-align: center;
     font-family: var(--sizeText2);
-    margin: 0;
+    font-size: clamp(1rem, 5%, 2.5rem);
     color: var(--intermadiate);
     text-shadow: var(--box-shadow);
+    margin-bottom: 0px;
 }
 
 .gift>h1 {
@@ -152,9 +155,49 @@ textarea {
     font-family: var(--font-title);
     margin: 0;
 }
+
 a {
     cursor: pointer;
 }
+
+.containerForm .input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.containerForm>h2 {
+    text-align: center;
+    font-family: var(--sizeText2);
+    margin: 0;
+    color: var(--dark);
+    text-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing3);
+}
+
+.alert>img {
+    margin-bottom: var(--spacing3);
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search] {
+    border-color: var(--dark);
+    width: 60%;
+    text-align: center;
+}
+
+[role=link],
+a {
+    color: #FFA384;
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--sizeText2);
+    margin: 0;
+    color: var(--dark);
+    text-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing3);
+}
+
 
 #next_button {
     margin-top: 5px;
@@ -166,7 +209,16 @@ a {
         width: var(--clamp90);
     }
 
+<<<<<<< HEAD
     .pop-up h2 {
         font-size: calc(var(--sizeText) * 1.2);
+=======
+    .pop-up>img {
+        width: 200px;
+    }
+
+    .pop-up {
+        height: calc(var(--spacing4)*2);
+>>>>>>> 6df76763ba5f583e29e9ebd19163e68e492f5a8e
     }
 }
