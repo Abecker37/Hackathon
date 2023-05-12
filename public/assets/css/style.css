@@ -148,13 +148,60 @@ textarea {
     font-family: var(--font-title);
     margin: 0;
 }
+
 a {
     cursor: pointer;
 }
 
+.containerForm .input-group {
+    display: flex;
+    justify-content: center;
+}
+
+.containerForm>h2 {
+    text-align: center;
+    font-family: var(--sizeText2);
+    margin: 0;
+    color: var(--dark);
+    text-shadow: var(--box-shadow);
+    margin-bottom: var(--spacing3);
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search] {
+    border-color: var(--dark);
+}
+
+[role=link],
+a {
+    color: #FFA384;
+}
+
+
 #next_button {
-    margin-top: 5px;
+    margin-top: var(--spacing5);
     visibility: hidden;
+    display: flex;
+    --background-color: #FFA384;
+    margin-block-start: auto;
+    height: calc(var(--spacing2)*1.5);
+    margin: 0;
+    --border-color: #FFA384;
+    width: 40%;
+    margin-bottom: var(--spacing3);
+}
+
+.list-group-item p {
+    color: var(--dark);
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+h5 {
+    font-family: var(--font-title);
+    font-family: var(--sizeText2);
 }
 
 @media screen and (max-width: 767px) {
