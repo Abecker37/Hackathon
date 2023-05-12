@@ -1,7 +1,13 @@
 /* footer */
 
-footer .container-fluid{
+footer .container-fluid {
     width: 100%;
+}
+
+.container-fluid h3,
+.media-list {
+    margin-bottom: var(--spacing1);
+
 }
 
 footer {
@@ -36,7 +42,8 @@ body>main {
     z-index: var(--thirdPlan);
 }
 
-footer h3, footer h4 {
+footer h3,
+footer h4 {
     font-family: var(--fontTitle);
     font-size: calc(var(--sizeText) + 5px);
     margin-bottom: 0;
@@ -173,6 +180,12 @@ ul li .footer-image {
 .picto-footer {
     width: 30px;
     margin-right: var(--spacing1);
+}
+
+.warning {
+    font-size: .7rem;
+    text-align: center;
+    margin-top: var(--spacing1);
 }
 
 .separator {

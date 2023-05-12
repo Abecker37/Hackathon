@@ -133,7 +133,7 @@ textarea {
 .pop-up h2 {
     text-align: center;
     font-family: var(--sizeText2);
-    font-size: clamp(1rem, 5%, 2.5rem);
+    font-size: clamp(2rem, 5%, 3rem);
     color: var(--intermadiate);
     text-shadow: var(--box-shadow);
     margin-bottom: 0px;
@@ -182,11 +182,25 @@ input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search]
     border-color: var(--dark);
     width: 60%;
     text-align: center;
+    margin-bottom: var(--spacing3);
 }
 
 [role=link],
 a {
     color: #FFA384;
+}
+
+h5 {
+    font-family: var(--sizeText2);
+    color: var(--dark);
+    text-shadow: var(--box-shadow);
+    margin-bottom: 0px;
+    margin-bottom: var(--spacing3);
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -202,6 +216,14 @@ h2 {
 #next_button {
     margin-top: 5px;
     visibility: hidden;
+    width: 40%;
+    background-color: #FFA384;
+    border-color: #FFA384;
+    margin-bottom: var(--spacing3);
+}
+
+.pop-up h2 {
+    font-size: calc(var(--sizeText) * 1.2);
 }
 
 .pop-up h2 {
