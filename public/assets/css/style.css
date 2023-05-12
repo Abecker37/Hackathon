@@ -28,6 +28,8 @@
     --secondPlan: 5;
     --thirdPlan: 2;
 
+    --borderRadius: 5px;
+
     --clamp60: clamp(650px, 60vw, 1200px);
     --clamp90: clamp(200px, 90vw, 690px);
     --card-shadow: 2px 2px 7px 2px #FFA384, -3px 2px 7px 3px #EFE7BC,
