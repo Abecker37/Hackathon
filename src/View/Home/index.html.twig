@@ -2,40 +2,36 @@
 
 {% block content %}
 	<header>
-
 		<input type="search" class="search" id="search" name="search" placeholder="Faites le grand saut..."></input>
 </header>
-<main>
+<main class="container">
 	<div class="presentation">
 		<p>Bienvenue chez "Destination Finale", l'entreprise qui redéfinit l'aventure jusqu'au dernier instant ! Nos voyages sur mesure vous transportent vers des destinations captivantes, avec une touche de légèreté face à l'absurdité de la vie. Préparez-vous à explorer des lieux uniques, en faisant face à l'inévitable avec un sourire complice. Rejoignez-nous pour une expérience de voyage inoubliable et laissez-vous emporter par l'excitation de chaque instant. Destination Finale, faites le grand saut vers l'inconnu !</p>
 	</p>
-	<div class="forfait">
-		<article>1</article>
-		<article>2</article>
-		<article>3</article>
-		<article>4</article>
+	<div class="gift">
+		<h1>Nos cartes cadeaux</h1>
+		<div class="forfait">
+			<article>
+				<h3>Formule Solo</h3>
+			</article>
+			<article>
+				<h3>Formule Duo</h3>
+			</article>
+			<article>
+				<h3>Formule Troisiéme Âge</h3>
+			</article>
+			<article>
+				<h3>Formule Prenium</h3>
+			</article>
+		</div>
 	</div>
 	<div>
 		<div class="pop-up-content">
 			<article class="pop-up">
 				<img src="/assets/images/mamie1.png" class="mamie">
-				<h2>Offrez une belle fin à vos proche!</h2>
+				<h2>⭐️ Offrez une belle fin à vos proche!!! ⭐️</h2>
 			</article>
 		</div>
-		<div class="populaire">
-			<div class="pop1">
-				<article>1</article>
-				<article>2</article>
-				<article>3</article>
-			</div>
-			<div class="pop2">
-				<article>4</article>
-				<article>5</article>
-				<article>6</article>
-			</div>
-		</div>
 	</div>
-  
-  {% include 'Home/cards.html.twig' %}
-  
+	{% include 'Home/cards.html.twig' %}
 </main>{% endblock %}

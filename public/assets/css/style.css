@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@600;700&family=Lora:wght@400;500;600&display=swap');
 
-
-[data-theme="light"],
-:root:not([data-theme="dark"]) {
-    --primary: var(--primary);
-    --secondary: var(--secondary);
-    --background-color: none;
-}
-
 :root {
     --primary: #74BDCB;
     --secondary: #FFA384;
@@ -30,7 +22,7 @@
     --sizeTitle: 2rem;
     --sizeTitle2: 1rem;
     --sizeText: 0.87rem;
-    --sizeTitleLogo: 1.25rem;
+    --sizeText2: 1.25rem;
 
     --firstPlan: 10;
     --secondPlan: 5;
@@ -39,8 +31,8 @@
     --clamp60: clamp(650px, 60vw, 1200px);
     --clamp90: clamp(200px, 90vw, 690px);
     --card-shadow: 2px 2px 7px 2px #FFA384, -3px 2px 7px 3px #EFE7BC,
-     -3px -2px 7px 3px #e7f4fb, 6px -2px 7px 3px #74BDCB, 6px 5px 7px 3px #e7f4fb,
-      -5px 5px 7px 3px #FFA384, -5px -3px 7px 1px #8E5CFF, 3px 2px 2px 2px rgba(0, 0, 0, 0);
+        -3px -2px 7px 3px #e7f4fb, 6px -2px 7px 3px #74BDCB, 6px 5px 7px 3px #e7f4fb,
+        -5px 5px 7px 3px #FFA384, -5px -3px 7px 1px #8E5CFF, 3px 2px 2px 2px rgba(0, 0, 0, 0);
 }
 
 * {
@@ -65,6 +57,10 @@ body>header {
     align-items: center;
     background-attachment: fixed;
     height: 100vh;
+}
+
+body>.container {
+    width: var(--clamp60);
 }
 
 .search {
@@ -97,11 +93,11 @@ textarea {
     display: flex;
     margin: auto;
     margin: var(--spacing5);
-    gap: var(--spacing3);
+    gap: var(--spacing2);
 }
 
 .forfait>article {
-    width: calc(var(--spacing5)*2.5);
+    width: calc(var(--spacing5)*3);
     height: calc(var(--spacing5)*2.5);
     box-shadow: var(--card-shadow);
     margin: auto;
@@ -122,26 +118,25 @@ h2 {
     text-align: center;
     font-family: var(--font-title);
     margin: 0;
-
 }
 
-.pop-up .mamie {
-    height: 150%;
-    width: 20%;
+.gift>h1 {
+    font-family: var(--font-title);
+    color: var(--dark);
+    text-shadow: 1px 1px 2px #021b1f;
+    font-size: 4rem;
+    text-align: center;
 }
 
-.pop1>article,
-.pop2>article {
-    width: calc(var(--spacing5)*4);
-    height: calc(var(--spacing5)*4);
-    margin: auto;
-    gap: var(--spacing1);
+.forfait h3 {
+    font-family: var(--font-title);
+    text-align: center;
+    margin: 0;
 }
 
-.populaire .pop1,
-.pop2 {
+.forfait>article {
+    background-image: url("/assets/images/stars.gif");
     display: flex;
-    margin: auto;
-    margin: var(--spacing5);
-    gap: var(--spacing3);
+    justify-content: center;
+    align-items: center;
 }
